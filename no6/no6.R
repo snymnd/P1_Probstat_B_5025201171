@@ -11,7 +11,7 @@ x2 <- ceiling(avg)
 pdf <- dnorm(data, mean, sd)
 plot(data, pdf)
 
-#data antara x1 sampai x2 (x1 < x < x2), dengan 100 data
+#menemukan comulative distriibution function (cdf) untuk nilai x, (X1 < x <X2)
 x1_pnorm <- pnorm(x1, mean, sd)
 x2_pnorm <- pnorm(x2, mean, sd)
 x_pnorm <- x2_pnorm - x1_pnorm
